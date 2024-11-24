@@ -16,7 +16,7 @@ if(M.file_exists(nvim_home .. "/lua/config/one.lua")) then
 end
 require("onedark.vim")
 function M.setup()
-	vim.api.nvim_set_hl(0, "Normal", { bg = c.bg0, ctermbg=c.bg0 })
+	vim.api.nvim_set_hl(0, "Normal", { bg = c.bg0 })
 	vim.api.nvim_set_hl(0, "Visual", { bg = c.bg3 })
 	vim.api.nvim_set_hl(0, "Terminal", { fg = c.fg, bg = c.bg0 })
 	vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = c.grey, bg = nil })
