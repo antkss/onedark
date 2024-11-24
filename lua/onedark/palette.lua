@@ -1,7 +1,7 @@
 vim.opt.background = "dark"
 return {
 	dark = {
-		black = "#1a212e",
+		black = "#000000",
 		bg0 = "#1D100A",
 		bg1 = "#31353f",
 		bg2 = "#393f4a",

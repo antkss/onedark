@@ -24,7 +24,7 @@ end
 
 --stylua: ignore start
 -- General
-hi('Normal', {})
+-- hi('Normal', {})
 
 hi('Conceal',      { fg = 'LightGrey', bg = 'DarkGrey', ctermfg = 'LightGrey', ctermbg = 'DarkGrey' })
 hi('Cursor',       {})
@@ -208,6 +208,7 @@ hi('@lsp.type.variable',      { link = 'Identifier' })
 
 if vim.o.background == 'light' then
   -- Default colors only used with a light background.
+  hi('Normal', 		{fg = 'White',   ctermfg='White'})
   hi('ColorColumn',  { bg = 'LightRed',                            ctermbg = 'LightRed' })
   hi('CursorColumn', { bg = 'Grey90',                              ctermbg = 'LightGrey' })
   hi('CursorLine',   { bg = 'Grey90',                              cterm = { underline = true } })
@@ -247,6 +248,7 @@ if vim.o.background == 'light' then
   hi('Ignore',       {                                             ctermfg = 'White' })
 else
   -- Default colors only used with a dark background.
+  hi('Normal', 		{fg = 'White',   ctermfg='White'})
   hi('ColorColumn',  { bg = 'DarkRed',                            ctermbg = 'DarkRed' })
   hi('CursorColumn', { bg = 'Grey40',                             ctermbg = 'DarkGrey' })
   hi('CursorLine',   { bg = 'Grey40',                             cterm = { underline = true } })
